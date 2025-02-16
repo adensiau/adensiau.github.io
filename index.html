@@ -26,6 +26,35 @@
 
     <!-- Meta Tags Generated with https://metatags.io -->
 
+    <style>
+      .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .skills-list li {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+      }
+      .skills-list li img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+    </style>
+
+
+
     <!-- Link -->
     <link
       rel="apple-touch-icon"
@@ -74,12 +103,14 @@
         <div class="container">
           <!-- Logo -->
           <h1 id="logo">
-            <a href="https://github.com/CommunityPro/portfolio-html"
+            <a href="https://github.com/adensiau"
               ><img src="./assets/logo.png" alt="Your Logo"
             /></a>
           </h1>
           <!-- Navbar links -->
           <ul class="nav-menu">
+
+            <li><a class="nav-link" href="#skills">SKILLS</a></li> <!-- Added this -->>
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link" href="https://linktr.ee/adensiau">CONTACT</a></li>
             <li>
@@ -133,6 +164,27 @@
         >
       </section>
     </header>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Skills</h2>
+        <p>Technical skills specialising in Data Science.</p>
+      </div>
+      <ul class="skills-list">
+        <li><img src="assets/python-svgrepo-com.svg" alt="Python" /> Python (Pandas, NumPy, Scikit-learn, TensorFlow, Keras)</li>
+        <li><img src="assets/RStudio.svg" alt="R" />R (ggplot2, dplyr, tidyr)</li>
+        <li>📊 Data Visualisation (Matplotlib, Seaborn, Plotly)</li>
+        <li>🤖 Machine Learning & Deep Learning</li>
+        <li>🛠 Data Cleaning and preprocessing</li>
+        <li>⏳ Time Series Analysis</li>
+        <li>🌐 Web Scraping & Data Collection</li>
+        <li>🗄 SQL & Database Management (Soon)</li>
+      </ul>
+    </section>
+
+
 
     <!-- Projects -->
     <section id="projects" class="project-container container">
